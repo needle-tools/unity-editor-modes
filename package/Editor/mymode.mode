@@ -1,0 +1,35 @@
+mymode = {
+    builtin = true
+    label = "Sample Mode"
+    
+    layout = {
+        restore_saved_layout = false
+        center_view = {
+            vertical = true
+            children = [
+                {
+                    horizontal = true
+                    children = [
+                        { tabs = true children = [{ class_name = "ProjectBrowser"}] size = 0.3 }
+                        { tabs = true children = [{ class_name = "InspectorWindow"}] size = 0.2 }
+                        { tabs = true children = [{ class_name = "SceneHierarchyWindow"}] size = 0.2 }
+                    ]
+                }
+                {
+                    tabs = true children = [{ class_name = "TimelineWindow"}] size = 0.3
+                }
+                { tabs = true children = [{ class_name = "ConsoleWindow"}] size = 0.3 }
+            ]
+        }
+    }
+
+    capabilities = {
+        remember = true                  
+        safe_mode = false                    // Used to disable some features
+        main_toolbar = true
+        layout_switching = true             // Update the layout when switching to safe mode.
+        layout_window_menu = true
+        status_bar_extra_features = true
+        allow_asset_creation = true
+    }
+}

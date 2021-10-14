@@ -1,0 +1,13 @@
+{
+    "name": "com.needle.unity-modes.Editor",
+    "references": ["com.needle.unity-modes"],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
