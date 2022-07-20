@@ -1,0 +1,1 @@
+start E:\UnityEditors\2020.3.33f1\Editor\Unity.exe -projectPath "%~dp0/Modes_2020_3" -mode "Needle Console And Scene View"

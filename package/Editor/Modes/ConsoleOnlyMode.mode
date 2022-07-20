@@ -26,14 +26,14 @@ console_only = {
 
     layout = {
         restore_saved_layout = false
-        top_view = {  }
+        top_view = { class_name = "ConsoleWindow" size = 0 }
         center_view = {
-            vertical = true
+            vertical = false
             children = [
                 {
-                    horizontal = true
+                    vertical = true
                     children = [
-                        { tabs = true children = [{ class_name = "ConsoleWindow"}] size = 0.8 }
+                        { class_name = "ConsoleWindow"}
                     ]
                 }
             ]
