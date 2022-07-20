@@ -1,0 +1,82 @@
+
+needle_animation_mode = {
+    builtin = true
+    label = "Needle Animation Mode (Sample)"
+
+    pane_types = [
+        "Animator"
+        "Timeline"
+        "Animation"
+        "InspectorWindow"
+        "ProjectBrowser"
+    ]
+    
+    menus = [
+        { name = "File" children = [
+            null
+            { name = "Exit" }
+        ]}
+        
+        { name = "Edit" children = [null]
+        }
+    ]
+
+    context_menus = {
+        Assets = [
+            { name = "Show in Explorer" platform="windows" }
+            { name = "Reveal in Finder" platform="osx" }
+            { name = "Create/Folder" }
+            { name = "Create/Animator Controller" }
+            { name = "Create/Animation" }
+            { name = "Create/Timeline" }
+        ]
+    }
+
+    layout = {
+        restore_saved_layout = false
+        center_view = {
+            horizontal = true
+            children = [
+                {
+                    size = 0.7
+                    vertical = true
+                    children = [
+                        {
+                            horizontal = true
+                            children = [
+                                { class_name = "SceneView" }
+                                { class_name = "GameView" }
+                            ]
+                        }
+                        { class_name = "AnimationWindow"}
+                        { class_name = "TimelineWindow"}
+                    ]
+                }
+                {
+                    size = 0.3
+                    vertical = true
+                    children = [
+                        {
+                            size = 0.3
+                            tabs = true
+                            children = [{ class_name = "ProjectBrowser" }]
+                        }
+                        { class_name = "InspectorWindow"}
+                        { class_name = "ConsoleWindow"}
+                    ]
+                }
+            ]
+        }
+    }
+
+    capabilities = {
+        reset_menus = true
+        remember = false                    // Never save this mode as the current
+        safe_mode = false                    // Used to disable some features
+        main_toolbar = false
+        layout_switching = true             // Update the layout when switching to safe mode.
+        layout_window_menu = false
+        status_bar_extra_features = true
+        allow_asset_creation = true
+    }
+}
