@@ -1,3 +1,4 @@
+using System.IO;
 using UnityEditor;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
@@ -30,9 +31,18 @@ namespace Needle
 			{
 				using var sv = new EditorGUILayout.ScrollViewScope(scroll);
 				scroll = sv.scrollPosition;
-
-				if (GUILayout.Button("Scan Modes", GUILayout.Height(30)))
-					ModeService.ScanModes();
+				using (new GUILayout.HorizontalScope())
+				{
+					if (GUILayout.Button("Scan Modes", GUILayout.Height(30)))
+						ModeService.ScanModes();
+					if (GUILayout.Button("Builtin ↗", GUILayout.Height(30), GUILayout.Width(70)))
+					{
+						var dir = Path.GetDirectoryName(EditorApplication.applicationPath) + "/Data/Resources";
+						var fp = dir + "/default.mode";
+						if (File.Exists(fp)) EditorUtility.OpenWithDefaultApp(fp);
+						else EditorUtility.RevealInFinder(dir);
+					}
+				}
 				GUILayout.Space(10);
 
 				for (var index = 0; index < ModeService.modeNames.Length; index++)
