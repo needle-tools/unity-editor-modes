@@ -13,7 +13,8 @@ namespace Needle
 		[InitializeOnLoadMethod]
 		private static async void Init()
 		{
-			while (EditorApplication.isUpdating && ModeService.modeCount <= 0) await Task.Delay(100);
+			while (EditorApplication.isUpdating || EditorApplication.isCompiling) 
+				await Task.Delay(100);
 			var args = Environment.GetCommandLineArgs();
 			for (var index = 0; index < args.Length; index++)
 			{
