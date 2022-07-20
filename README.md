@@ -1,3 +1,3 @@
 # Unity Editor Modes
 
-![2022-07-20-031029_Modes_2020_3_-_Test_-_PC,_Mac_ _Linux_Standalone_--needle](https://user-images.githubusercontent.com/5083203/179874745-f2d0aca5-7096-439f-9bef-4158e5d77d27.png)
+![image](https://user-images.githubusercontent.com/5083203/179876811-70803b39-5d1b-4310-ad9e-6696f1c03b30.png)
