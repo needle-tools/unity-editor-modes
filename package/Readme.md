@@ -3,7 +3,9 @@
 *Easily switch between or create new Unity editor modes!  
 Use the same system that Unity's builtin Safe Mode does or the Standalone Profiler.*
 
-### How to use 💡
+![](./Documentation~/modes.png)
+
+## Usage 💡
 
 Open ``Window/Needle/Unity Modes Window`` to easily switch between currently known modes (or shortcut ``Ctrl+F12``)  
 
