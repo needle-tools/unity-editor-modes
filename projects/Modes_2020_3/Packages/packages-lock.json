@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.needle.unity-modes": {
+    "com.needle.editor-modes": {
       "version": "file:../../../package",
       "depth": 0,
       "source": "local",
