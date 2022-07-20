@@ -1,0 +1,53 @@
+
+console_only = {
+    builtin = true
+    label = "Needle Console Only"
+
+    pane_types = [
+        "ConsoleWindow"
+    ]
+    
+    menus = [
+        { name = "File" children = [
+            null
+            { name = "Exit" }
+        ]}
+        
+        { name = "Edit" children = [null]
+        }
+    ]
+
+    context_menus = {
+        Assets = [
+            { name = "Show in Explorer" platform="windows" }
+            { name = "Reveal in Finder" platform="osx" }
+        ]
+    }
+
+    layout = {
+        restore_saved_layout = false
+        top_view = {  }
+        center_view = {
+            vertical = true
+            children = [
+                {
+                    horizontal = true
+                    children = [
+                        { tabs = true children = [{ class_name = "ConsoleWindow"}] size = 0.8 }
+                    ]
+                }
+            ]
+        }
+    }
+
+    capabilities = {
+        reset_menus = true
+        remember = false                    // Never save this mode as the current
+        safe_mode = false                    // Used to disable some features
+        main_toolbar = false
+        layout_switching = true             // Update the layout when switching to safe mode.
+        layout_window_menu = false
+        status_bar_extra_features = false
+        allow_asset_creation = false
+    }
+}
