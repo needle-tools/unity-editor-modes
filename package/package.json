@@ -1,7 +1,7 @@
 {
   "name": "com.needle.unity-modes",
   "displayName": "Needle Unity Modes",
-  "version": "1.0.0-pre"
+  "version": "1.0.0-pre",
   "description": "Expose Unity Modes API (think Safe Mode) and make it easy to switch between or startup in a specific Editor Mode",
   "keywords": [
     "Editor",
